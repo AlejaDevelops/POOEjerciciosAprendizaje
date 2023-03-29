@@ -8,27 +8,19 @@ objeto. OK
 d) Método area(): para calcular el área de la circunferencia (𝐀𝐫𝐞𝐚 = 𝛑 ∗ 𝐫𝐚𝐝𝐢𝐨𝟐). OK
 e) Método perimetro(): para calcular el perímetro (𝐏𝐞𝐫𝐢𝐦𝐞𝐭𝐫𝐨 = 𝟐 ∗ 𝛑 ∗ 𝐫𝐚𝐝𝐢𝐨). ok
  */
-package mainpackage;
-
-import Entidades.E2Circunferencia;
-import servicepackage.E2CircunferenciaService;
-
+package E2Circunferencia;
 
 /**
  *
  * @author AlejaDevelops
  */
-public class E2CrearCircunferencia {
-
+public class MainCircunferencia {
 
     public static void main(String[] args) {
-        
-       E2CircunferenciaService cs = new E2CircunferenciaService();
-       E2Circunferencia c1 = cs.crearCircunferencia();
+        CircunferenciaService cs = new CircunferenciaService();
+       Circunferencia c1 = cs.crearCircunferencia();
        cs.calcularArea(c1);
        cs.calcularPerimetro(c1);
-       
-       
     }
     
 }

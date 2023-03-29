@@ -1,19 +1,19 @@
 
-package Entidades;
+package E2Circunferencia;
 
 /**
  *
  * @author AlejaDevelops
  */
-public class E2Circunferencia {
+public class Circunferencia {
     private double radio;
     double area;
     double perimetro;
 
-    public E2Circunferencia() {
+    public Circunferencia() {
     }
 
-    public E2Circunferencia(double radio, double area, double perimetro) {
+    public Circunferencia(double radio, double area, double perimetro) {
         this.radio = radio;
         this.area = area;
         this.perimetro = perimetro;
@@ -47,16 +47,6 @@ public class E2Circunferencia {
 
     @Override
     public String toString() {
-        return "E2Circunferencia{" + "radio=" + radio + ", area=" + area + ", perimetro=" + perimetro + '}';
+        return "Circunferencia{" + "radio=" + radio + ", area=" + area + ", perimetro=" + perimetro + '}';
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 }

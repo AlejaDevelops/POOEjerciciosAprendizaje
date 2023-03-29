@@ -1,12 +1,11 @@
 
-package Entidades;
+package E1DatosLibros;
 
 /**
  *
  * @author AlejaDevelops
  */
-public class E1Libro {
-    
+public class Libros {
     //Creación de las variables
     String isbn;
     String titulo;
@@ -14,11 +13,11 @@ public class E1Libro {
     int nPaginas;
     
     //Constructor vacío - Por defecto
-    public E1Libro() {
+    public Libros() {
     }
     
     ///Constructor con parámetros - OBJETOS DEL TIPO E1Libro
-    public E1Libro(String isbn, String titulo, String autor, int nPaginas) {
+    public Libros(String isbn, String titulo, String autor, int nPaginas) {
         this.isbn = isbn;
         this.titulo = titulo;
         this.autor = autor;
@@ -59,13 +58,6 @@ public class E1Libro {
 
     @Override
     public String toString() {
-        return "E1Libro{" + "isbn=" + isbn + ", titulo=" + titulo + ", autor=" + autor + ", nPaginas=" + nPaginas + '}';
+        return "Libros{" + "isbn=" + isbn + ", titulo=" + titulo + ", autor=" + autor + ", nPaginas=" + nPaginas + '}';
     }
-    
-    
-    
-    
-           
-            
-    
 }

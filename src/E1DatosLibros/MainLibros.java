@@ -5,26 +5,26 @@ constructor vacío. Crear un método para cargar un libro pidiendo los datos al 
 luego informar mediante otro método el número de ISBN, el título, el autor del libro y el
 numero de páginas.
  */
-package mainpackage;
-
-import Entidades.E1Libro;
-import servicepackage.E1LibroService;
+package E1DatosLibros;
 
 /**
  *
- * @author Computador 1
+ * @author AlejaDevelops
  */
-public class E1DatosLibros {
+public class MainLibros {
+
 
     public static void main(String[] args) {
+       
         // Instanciación de un objeto libroServicio del tipo E1LibroService (Nombre de la Clase Servicio)
-        E1LibroService libroServicio = new E1LibroService();
+        LibrosService libroServicio = new LibrosService();
         
         //Instanciación de un objeto libro1 del tipo E1Libro (Método de la clase Servicio)
-        E1Libro libro1 = libroServicio.informacionLibro();
+        Libros libro1 = libroServicio.informacionLibro();
         
         //Llamado del método impresionLibro con libro1 como parámetro
         libroServicio.impresionLibro(libro1);
     }
+    
     
 }
