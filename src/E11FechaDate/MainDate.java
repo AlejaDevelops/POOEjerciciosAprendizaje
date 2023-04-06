@@ -34,11 +34,11 @@ public class MainDate {
         System.out.println("Ingrese un año: ");
         anio = leer.nextInt();
         
-        Date fecha = new Date(anio-1900, mes-1, dia);
         Date fechaActual = new Date();
+        Date fecha = new Date(fechaActual.getYear()+1900-anio, fechaActual.getMonth()+1-mes, fechaActual.getDate()-dia);       
         
-        System.out.println("La fecha ingresada es: " + fecha.toString());
-        System.out.println("Hay " + (fechaActual.getYear()-fecha.getYear()) + " anios de diferencia.");
+        
+        System.out.println("Hay " + fecha.getYear()+" años " + fecha.getMonth()+ " meses "+fecha.getDate()+" días "+" de diferencia.");
         System.out.println("La fecha actual es: " + fechaActual.toString());
     }
     
